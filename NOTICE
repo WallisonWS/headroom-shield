@@ -1,0 +1,7 @@
+Headroom Shield
+Copyright 2026 Wallison Araujo (@WallisonWS)
+
+This project is an independent, zero-dependency, security-hardened context compression
+engine, MCP server, HTTP proxy, and interactive Web Studio inspired by the compression
+and Compress-Cache-Retrieve (CCR) architecture of headroomlabs-ai/headroom
+(https://github.com/headroomlabs-ai/headroom), licensed under the Apache License, Version 2.0.

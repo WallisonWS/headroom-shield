@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "headroom-shield"
+version = "1.1.0"
+description = "Zero-Dependency, Zero-Telemetry LLM Context Compressor + OWASP Security Shield, SQLite CCR Store, MCP Server & Local Proxy."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+authors = [{ name = "Wallison Araujo", email = "wallisonoficial85@gmail.com" }]
+keywords = ["llm", "context-compression", "mcp", "owasp-llm", "gemini", "azure-openai", "pii-redaction", "devsecops"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://wallisonws.github.io/headroom-shield/"
+Repository = "https://github.com/WallisonWS/headroom-shield"
+Issues = "https://github.com/WallisonWS/headroom-shield/issues"
+
+[project.scripts]
+headroom-shield-mcp = "headroom_shield.mcp_server:main"
+headroom-shield-proxy = "headroom_shield.proxy_server:main"

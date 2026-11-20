@@ -1,0 +1,22 @@
+{
+  "name": "headroom-shield",
+  "version": "1.1.0",
+  "description": "Zero-Dependency LLM Context Compressor + OWASP Security Shield & Reversible PII Vault (Node, Browser, Edge Workers)",
+  "type": "module",
+  "main": "./sdk/headroom-shield.mjs",
+  "types": "./sdk/headroom-shield.d.ts",
+  "exports": {
+    ".": {
+      "types": "./sdk/headroom-shield.d.ts",
+      "import": "./sdk/headroom-shield.mjs"
+    }
+  },
+  "keywords": ["llm", "context-compression", "mcp", "prompt-injection", "owasp", "gemini", "azure-openai", "pii"],
+  "author": "Wallison Araujo (@WallisonWS)",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WallisonWS/headroom-shield.git"
+  },
+  "homepage": "https://wallisonws.github.io/headroom-shield/"
+}

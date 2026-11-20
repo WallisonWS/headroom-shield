@@ -160,7 +160,11 @@ class HeadroomShieldMCPServer:
                 sys.stdout.flush()
 
 
-if __name__ == "__main__":
+def main() -> None:
     db = Path.home() / ".headroom-shield" / "ccr_store.db"
     db.parent.mkdir(parents=True, exist_ok=True)
     HeadroomShieldMCPServer(db_path=db).run_stdio()
+
+
+if __name__ == "__main__":
+    main()

@@ -99,6 +99,20 @@ console.log(res.savingsPercent, res.ccrHash, res.threats);
 
 ---
 
+## 🏢 Enterprise & Cloud SDK Packaging (`v1.1.0`)
+
+Built for frictionless adoption inside **Google Cloud (Gemini / Vertex AI)**, **Microsoft Azure OpenAI**, and hardened Kubernetes clusters:
+
+* **Standard Python Packaging (`pyproject.toml`):** `pip install -e .` installs `headroom-shield` & `headroom-shield-mcp` CLI entrypoints with **zero third-party runtime dependencies**.
+* **TypeScript & Node.js ESM (`package.json` + [`sdk/headroom-shield.d.ts`](sdk/headroom-shield.d.ts)):** Full strict TypeScript declarations out of the box.
+* **CIS-Hardened Non-Root Container ([`Dockerfile`](Dockerfile)):** Runs as unprivileged `headroom` user (`UID 10001`) with built-in `/health` check and air-gapped defaults.
+* **Cloud AI Reference Examples:**
+  * Google Gemini / Vertex AI Pipeline → [`examples/google_gemini_vertex_ai.py`](examples/google_gemini_vertex_ai.py)
+  * Microsoft Azure OpenAI Enterprise Agent → [`examples/microsoft_azure_openai_agent.py`](examples/microsoft_azure_openai_agent.py)
+* **Architecture Decision Record:** [`docs/ADR-001-architecture.md`](docs/ADR-001-architecture.md)
+
+---
+
 ## 🧪 Run Unit Tests
 ```bash
 python3 -m unittest discover -s tests -p "test_*.py" -v
